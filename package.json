@@ -1,0 +1,27 @@
+{
+  "name": "cypress-serenity-js",
+  "version": "1.0.0",
+  "author": "Kenny Baas <kenny@baasie.com>",
+  "description": "Example showing Serenity with Cypress, based on https://github.com/cypress-io/cypress-example-recipes/tree/master/examples/preprocessors__typescript-webpack",
+  "license": "Apache-2.0",
+  "scripts": {
+    "pretest": "./node_modules/.bin/serenity update",
+    "test": "cypress run",
+    "posttest": "./node_modules/.bin/serenity run",
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "build": "webpack --output-filename out.js --entry ./cypress/integration/*.ts",
+    "log": "echo 'it works';"
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^1.1.3",
+    "@serenity-js/core": "^1.5.9",
+    "@types/node": "^8.5.1",
+    "cypress": "2.0.4",
+    "cypress-serenity-reporter": "^1.0.1",
+    "serenity-cli": "^0.8.0",
+    "ts-loader": "^3.2.0",
+    "typescript": "2.7.2",
+    "webpack": "^3.10.0"
+  }
+}

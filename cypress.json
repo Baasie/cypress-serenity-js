@@ -1,0 +1,6 @@
+{
+  "reporter": "cypress-serenity-reporter",
+  "baseUrl": "https://xebia.com",
+  "supportFile": "cypress/support/index.ts"
+
+}
